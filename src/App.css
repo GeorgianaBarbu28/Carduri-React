@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.product-card {
+  width: 45%; /* lățimea cardului */
+  margin: 10px; /* spațierea între carduri */
+  display: inline-block; /* aranjarea a două carduri pe rând */
+}
+
+.product-details{
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.10);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.product-card img {
+  min-width: 100px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* înălțimea automată pentru a menține proporțiile */
+}
+
+.product-card-prices {
+   color: green;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product-card-title {
+  height: 48px;
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card-description {
+  color: var(--textGray);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
